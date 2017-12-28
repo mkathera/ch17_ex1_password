@@ -6,7 +6,8 @@
     <link rel="stylesheet" href="styles/main.css" type="text/css"/>
 </head>
 <body>
-    <h1>Log In</h1>
+    <h1>Welcome User</h1>
+    <h2>Log In</h2>
     <p><i>${message}</i></p>
     <form action="check" method="post">
         <input type="hidden" name="action" value="add">        
