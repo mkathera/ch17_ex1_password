@@ -4,7 +4,7 @@ pipeline {
         stage('Build') { 
             steps { 
 		checkout scm
-		build 'ch17_ex1_password'  
+		build 'demo'  
                 echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
             }
         }
