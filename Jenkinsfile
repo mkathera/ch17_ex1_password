@@ -3,9 +3,8 @@ pipeline {
     stages {
         stage('Build') { 
             steps { 
-		git url: 'https://github.com/mkathera/ch17_ex1_password.git'    
-		env.PATH = "${tool 'Ant'}/bin:${env.PATH}"
-  		sh 'ant build'  
+		git url: 'https://github.com/mkathera/ch17_ex1_password.git/ch17_ex1_password'    
+  		sh 'ant war'  
                 echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
             }
         }
