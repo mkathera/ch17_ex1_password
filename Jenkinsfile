@@ -1,7 +1,7 @@
 pipeline { 
     agent any 
 	def CC = 'clang'
-	echo "jenkins version is ${JENKINS_VERSION}	
+	echo "lang is ${env.CC}	
     stages {
         stage('Build') { 
             steps { 
