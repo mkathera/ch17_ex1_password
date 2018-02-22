@@ -1,10 +1,10 @@
 pipeline { 
-    agent any 
-	def CC = 'clang'
-	echo "lang is ${env.CC}	
+    agent any 	
     stages {
         stage('Build') { 
             steps { 
+		checkout scm
+		build 'ch17_ex1_password'  
                 echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
             }
         }
