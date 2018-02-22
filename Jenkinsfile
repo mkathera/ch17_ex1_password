@@ -1,8 +1,7 @@
 pipeline { 
     agent any 
-	environment {
-		CC = 'clang'
-	}
+	def CC = 'clang'
+	echo "jenkins version is ${env.JENKINS_VERSION}	
     stages {
         stage('Build') { 
             steps { 
